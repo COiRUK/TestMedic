@@ -147,14 +147,14 @@
                     bridge.game.on('visibility_state_changed', state => sendMessageToUnity('OnVisibilityStateChanged', state))
 
                     let unityLoader = document.createElement('script')
-                    unityLoader.src = 'Build/WebGH(1).loader.js'
+                    unityLoader.src = 'Build/WebGH(2).loader.js'
                     unityLoader.onload = () => {
                         createUnityInstance(
                             canvas,
                             {
-                                dataUrl: 'Build/WebGH(1).data.br',
-                                frameworkUrl: 'Build/WebGH(1).framework.js.br',
-                                codeUrl: 'Build/WebGH(1).wasm.br',
+                                dataUrl: 'Build/WebGH(2).data.br',
+                                frameworkUrl: 'Build/WebGH(2).framework.js.br',
+                                codeUrl: 'Build/WebGH(2).wasm.br',
                                 streamingAssetsUrl: 'StreamingAssets',
                                 companyName: 'DefaultCompany',
                                 productName: 'Test for medic',
